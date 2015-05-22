@@ -1,0 +1,9 @@
+path: 'project-name/'
+bin:
+    server: 'bin/server'
+
+beta: 
+   host: ''
+
+product:
+    host: ''

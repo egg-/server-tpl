@@ -1,0 +1,35 @@
+{
+  "name": "server-tpl",
+  "version": "0.0.1",
+  "description": "basic template for api server.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/egg-/server-tpl.git"
+  },
+  "keyword": [
+    "template",
+    "server",
+    "expressjs"
+  ],
+  "author": {
+    "name": "egg",
+    "email": "i@egg.pe.kr"
+  },
+  "license": "MIT",
+  "homepage": "",
+  "devDependencies": {
+    "body-parser": "^1.12.3",
+    "express": "^4.12.3",
+    "grunt": "^0.4.5",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-node-inspector": "^0.1.6",
+    "grunt-nodemon": "^0.4.0",
+    "grunt-shell": "^1.1.2",
+    "lodash": "^3.8.0",
+    "log-notifier": "^0.1.0",
+    "matchdep": "^0.3.0",
+    "morgan": "^1.5.2",
+    "simple-message": "^0.2.1",
+    "yamljs": "^0.2.3"
+  }
+}

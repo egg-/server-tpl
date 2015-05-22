@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var http = require('http');
+var message = require('simple-message');
+var port = process.env.PORT || 3000;
+var url = 'http://madsquare.github.io/tosq/resource/error.yml';
+
+process.env.TZ = 'UTC';
+
+message.loadYAML('error', url, function(err) {
+    if (err) {
+        throw err;
+    }
+
+    var app = require('../app/app');
+    app.set('port', port);
+    
+    http.createServer(app).listen(port, function() {
+        console.info('start server. (port: ' + port + ')');
+    });
+});

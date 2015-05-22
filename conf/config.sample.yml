@@ -1,0 +1,9 @@
+hipchat: 
+    room: ''
+    auth_token: ''
+    room_token: ''
+    mention: 
+        # - '@rei'
+
+    allow: 'error|info'
+    prefix: 'api-video'
