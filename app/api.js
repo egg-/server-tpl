@@ -154,6 +154,10 @@ api.validator = {
                         continue;
                     }
 
+                    // form-urlencoded
+                    if (typeof req[target][key] === 'string') {
+                      req[target][key] = JSON.parse(req[target][key]);
+                    }
                     if (typeof req[target][key] === 'undefined' || check(params[key], req[target][key]) === false) {
                         return api.error('common.missing_required_parameter', req, res);
                     }

@@ -1,5 +1,6 @@
 node_modules
 npm-debug.log
 conf/config.yml
+project.yml
 dump.rbd
 docs
