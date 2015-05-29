@@ -6,4 +6,15 @@ hipchat:
         # - '@rei'
 
     allow: 'error|info'
-    prefix: 'api-video'
+    prefix: 'server-tpl'
+
+slack: 
+    webhookurl: ''
+    channel: '#report'
+    mention: 
+        # - '@rei'
+
+    allow: 'error|info'
+    prefix: 'server-tpl'
+    name: 'server-tpl'
+    icon: ''

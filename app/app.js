@@ -8,11 +8,10 @@ var express = require('express');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 var notifier = require('log-notifier');
-var yaml = require('yamljs');
 var app = express();
 var api = require('./api');
 
-var config = yaml.load('conf/config.yml');
+var config = api.config('../conf/config.yml');
 
 // load routes
 var routes = {

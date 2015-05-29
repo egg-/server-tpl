@@ -7,6 +7,7 @@
 var _ = require('lodash');
 var notifier = require('log-notifier');
 var message = require('simple-message');
+var yaml = require('yamljs');
 
 /**
  * @namespace api
@@ -96,6 +97,16 @@ api.error = function(err, req, res, origin) {
     }, false);
 };
 
+/**
+ * 지정된 yml 파일 로드
+ * @method error
+ * @memberOf api
+ * @param {string} path
+ * @return {object}
+ */
+api.config = function(path) {
+    return yaml.load(__dirname + '/' + path);
+};
 
 api.validator = {
     /**
